@@ -18,7 +18,7 @@ const NavBar = () => {
             className="nav-link"
             href="#"
           >
-            A PROPOS DE MOI
+            A propos de moi
           </NavLink>
           <NavLink
             style={styles.lien}
@@ -26,7 +26,7 @@ const NavBar = () => {
             className="nav-link"
             href="#"
           >
-            MON PORTFOLIO
+            Mon portfolio
           </NavLink>
           <NavLink
             style={styles.lien}
@@ -34,7 +34,7 @@ const NavBar = () => {
             className="nav-link"
             href="#"
           >
-            ME CONTACTER
+            Me contacter
           </NavLink>
         </ul>
       </div>
@@ -43,12 +43,9 @@ const NavBar = () => {
 };
 
 const styles = {
-  navbar: {
-    borderBottom: "3px solid #4285F4"
-  },
+  navbar: { marginBottom: 0 },
   lien: {
     fontSize: 18,
-    fontWeight: "bold",
     margin: "0px 20px"
   }
 };

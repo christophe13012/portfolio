@@ -1,0 +1,84 @@
+.bar {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(218, 21, 47, 0.89);
+  margin-top: 10px;
+  animation-duration: 10s;
+  display: inline-block;
+  text-align: right;
+  &.bar_0 {
+    width: 50%;
+    animation-name: bar_animate_0;
+  }
+  &.bar_1 {
+    width: 50%;
+    animation-name: bar_animate_1;
+  }
+  &.bar_2 {
+    width: 50%;
+    animation-name: bar_animate_2;
+  }
+  &.bar_3 {
+    width: 50%;
+    animation-name: bar_animate_3;
+  }
+  &.bar_4 {
+    width: 50%;
+    animation-name: bar_animate_4;
+  }
+  &.bar_5 {
+    width: 50%;
+    animation-name: bar_animate_5;
+  }
+  &.bar_6 {
+    width: 50%;
+    animation-name: bar_animate_6;
+  }
+  &.bar_7 {
+    width: 50%;
+    animation-name: bar_animate_7;
+  }
+  &.bar_8 {
+    width: 50%;
+    animation-name: bar_animate_8;
+  }
+}
+
+$percentages: (50, 50, 50, 50, 50, 50, 50, 50, 50);
+$factor: 20;
+$interval: 0.5;
+$previousAnimation: 0;
+@for $i from 1 through 9 {
+  @keyframes bar_animate_#{$i - 1} {
+    @if $i > 2 {
+      $previousAnimation: $previousAnimation +
+        ($factor * nth($percentages, $i - 1) / 100) +
+        $interval;
+      0%,
+      #{($previousAnimation)}% {
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+    } @else if $i == 2 {
+      $previousAnimation: $previousAnimation +
+        ($factor * nth($percentages, $i - 1) / 100) +
+        $interval;
+      0%,
+      #{$previousAnimation }% {
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+    } @else {
+      0% {
+        transform: scaleX(0);
+        transform-origin: left;
+      }
+    }
+
+    #{$previousAnimation+($factor * nth($percentages, $i) / 100)}%,
+    100% {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}

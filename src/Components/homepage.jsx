@@ -14,12 +14,12 @@ class Homepage extends Component {
   render() {
     return (
       <div style={styles.container}>
-        <p style={styles.p}>
+        <div style={styles.p}>
           Bonjour, je suis{" "}
           <Bounce style={styles.nom}>
             <span>Christophe Caillet</span>
           </Bounce>
-        </p>
+        </div>
         <p style={styles.p}>votre futur developpeur Web ?</p>
         <Link to="/about">
           <Button style={styles.button} color="primary" size="lg">

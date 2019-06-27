@@ -1,9 +1,16 @@
 import React, { Component } from "react";
+import NavBar from "./navBar";
 
 class Portfolio extends Component {
   state = {};
   render() {
-    return <h1>Portfolio</h1>;
+    return (
+      <div>
+        {" "}
+        <NavBar />
+        <h1>Portfolio</h1>
+      </div>
+    );
   }
 }
 
