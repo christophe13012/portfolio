@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import { Button } from "reactstrap";
 import { Link } from "react-router-dom";
+import styled, { keyframes } from "styled-components";
+import { bounce } from "react-animations";
+import Background from "../images/2.jpg";
+
+const Bounce = styled.div`
+  animation: 2s ${keyframes`${bounce}`} infinite;
+`;
 
 class Homepage extends Component {
   state = {};
@@ -8,7 +15,10 @@ class Homepage extends Component {
     return (
       <div style={styles.container}>
         <p style={styles.p}>
-          Bonjour, je suis <span style={styles.nom}>Christophe Caillet</span>
+          Bonjour, je suis{" "}
+          <Bounce style={styles.nom}>
+            <span>Christophe Caillet</span>
+          </Bounce>
         </p>
         <p style={styles.p}>votre futur developpeur Web ?</p>
         <Link to="/about">
@@ -23,7 +33,10 @@ class Homepage extends Component {
 
 const styles = {
   container: {
-    backgroundColor: "#0d47a1",
+    backgroundImage: `url(${Background})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
     color: "white",
     fontSize: 40,
     fontFamily: "Open Sans, sans-serif",
@@ -41,7 +54,8 @@ const styles = {
   },
   nom: {
     color: "#f50057",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    display: "inline-block"
   },
   button: { marginTop: 20 }
 };
