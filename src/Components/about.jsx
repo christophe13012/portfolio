@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Jumbotron, Progress } from "reactstrap";
+import { Jumbotron, Progress, Badge } from "reactstrap";
 import NavBar from "./navBar";
 import Slide from "react-reveal/Slide";
-import "../about.scss";
 
 class About extends Component {
   state = {};
@@ -10,8 +9,8 @@ class About extends Component {
     return (
       <div style={styles.container}>
         <NavBar />
-        <Jumbotron>
-          <h1 className="display-3">Hello, world!</h1>
+        <Jumbotron className="text-center">
+          <h1 className="display-4">Hello, world!</h1>
           <p className="lead">Je suis Christophe, un marseillais de 36 ans.</p>
           <hr className="my-2" />
           <p>
@@ -20,20 +19,14 @@ class About extends Component {
           </p>
           <p className="lead" />
         </Jumbotron>
-        <div>
-          <span>test</span>
-          <Progress animated value={2 * 5} />
-          <Progress animated color="success" value="25" />
-          <Progress animated color="info" value={50} />
-          <Progress animated color="warning" value={75} />
-          <Progress animated color="danger" value="100" />
-        </div>
         <div style={styles.about}>
           <Slide left cascade>
             <section style={styles.main}>
               <section style={styles.histoire}>
-                <p style={styles.titre}>Histoire : </p>
-                <p>
+                <h3>
+                  <Badge color="secondary">Histoire :</Badge>
+                </h3>
+                <p className="mt-4">
                   Apres avoir fait des études de sciences économiques à la
                   sortie d'un bac ES, je me suis orienté dans la logistique
                   jusque occuper maintenant un poste de responsable d'équipe.
@@ -61,60 +54,56 @@ class About extends Component {
                 <p>Au plaisir de pouvoir discuter avec vous.</p>
               </section>
               <section style={styles.comp}>
-                <p>Compétences : </p>
-                <div className="bar-container">
-                  <div style={styles.language}>HTML</div>
-                  <div className="bar bar_0">
-                    <span>75%</span>
-                  </div>
-                  <br />
-                  <div style={styles.language}>CSS</div>
-                  <div className="bar bar_1">
-                    <span>75%</span>
-                  </div>
-                  <br />
-                  <div style={styles.language}>JAVASCRIPT</div>
-                  <div className="bar bar_2">
-                    <span>80%</span>
-                  </div>
-                  <br />
-                  <div style={styles.language}>REACT</div>
-                  <div className="bar bar_3">
-                    <span>75%</span>
-                  </div>
-                  <br />
-                  <div style={styles.language}>REACT NATIVE</div>
-                  <div className="bar bar_4">
-                    <span>65%</span>
-                  </div>
-                  <br />
-                  <div style={styles.language}>JQUERY</div>
-                  <div className="bar bar_5">
-                    <span>65%</span>
-                  </div>
-                  <br />
-                  <div style={styles.language}>NODEJS</div>
-                  <div className="bar bar_6">
-                    <span>50%</span>
-                  </div>
-                  <br />
-                  <div style={styles.language}>GIT</div>
-                  <div className="bar bar_7">
-                    <span>50%</span>
-                  </div>
-                  <br />
-                  <div style={styles.language}>PHP</div>
-                  <div className="bar bar_8">
-                    <span>30%</span>
-                  </div>
+                <h3>
+                  <Badge color="secondary">Compétences :</Badge>
+                </h3>
+                <div>
+                  <div className="text-center">HTML</div>
+                  <Progress animated color="success" value="75">
+                    75%
+                  </Progress>
+                  <div className="text-center mt-3">CSS</div>
+                  <Progress animated color="success" value="75">
+                    75%
+                  </Progress>
+                  <div className="text-center mt-3">JAVASCRIPT</div>
+                  <Progress animated color="primary" value="80">
+                    80%
+                  </Progress>
+                  <div className="text-center mt-3">REACT</div>
+                  <Progress animated color="info" value="75">
+                    75%
+                  </Progress>
+                  <div className="text-center mt-3">REACT NATIVE</div>
+                  <Progress animated color="info" value="65">
+                    65%
+                  </Progress>
+                  <div className="text-center mt-3">JQUERY</div>
+                  <Progress animated color="warning" value="65">
+                    65%
+                  </Progress>
+                  <div className="text-center mt-3">NODEJS</div>
+                  <Progress animated color="warning" value="50">
+                    50%
+                  </Progress>
+                  <div className="text-center mt-3">GIT</div>
+                  <Progress animated color="danger" value="50">
+                    50%
+                  </Progress>
+                  <div className="text-center mt-3">PHP</div>
+                  <Progress animated color="danger" value="30">
+                    30%
+                  </Progress>
                 </div>
               </section>
             </section>
           </Slide>
           <Slide right cascade>
-            <section style={styles.formation}>
-              <p>Voici ma formation : </p>
-              <p>
+            <section className="bg-light" style={styles.formation}>
+              <h3>
+                <Badge color="secondary">Voici ma formation :</Badge>
+              </h3>
+              <p className="mt-4">
                 2019 : Diplôme "Développeur d'application FRONT END" enregistré
                 au Répertoire National des Certifications Professionnelles.
                 Diplôme niveau Bac+3/4 - Openclassrooms 75010 Paris
@@ -131,8 +120,10 @@ class About extends Component {
           </Slide>
           <Slide left cascade>
             <section style={styles.experience}>
-              <p>Ainsi que mon expérience :</p>
-              <p>
+              <h3>
+                <Badge color="secondary">Ainsi que mon expérience :</Badge>
+              </h3>
+              <p className="mt-4">
                 2015 à ce jour : Responsable équipe logistique AVENIR TELECOM
                 Marseille
               </p>
@@ -154,57 +145,27 @@ class About extends Component {
 
 const styles = {
   container: {
-    textAlign: "center",
-    fontFamily: "Open Sans, sans-serif",
     backgroundColor: "white"
   },
-  header: {
-    fontSize: 20,
-    backgroundColor: "#F7F5F3",
-    textTransform: "uppercase",
-    color: "black",
-    padding: "50px 150px"
-  },
-  p: {
-    margin: 0,
-    padding: 0,
-    lineHeight: 1.2
-  },
   main: {
-    marginTop: 100,
+    marginTop: 60,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around"
   },
   histoire: {
-    textAlign: "left",
-    width: "45%",
-    fontSize: 15
+    width: "45%"
   },
   comp: {
-    width: "45%",
-    textAlign: "left",
-    fontSize: 15
-  },
-  language: {
-    fontSize: 15,
-    paddingTop: 3,
-    paddingLeft: 5,
-    width: 110,
-    display: "inline-block",
-    height: 30,
-    backgroundColor: "rgba(218, 21, 47, 0.7)"
+    width: "45%"
   },
   formation: {
-    textAlign: "left",
     paddingLeft: 50,
     paddingTop: 30,
     paddingBottom: 30,
-    marginTop: 75,
-    backgroundColor: "#F7F5F3"
+    marginTop: 75
   },
   experience: {
-    textAlign: "left",
     paddingLeft: 50,
     paddingTop: 30,
     paddingBottom: 40,
