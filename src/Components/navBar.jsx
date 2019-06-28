@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
+import HeadShake from "react-reveal/HeadShake";
 
 const NavBar = () => {
   return (
@@ -7,9 +8,11 @@ const NavBar = () => {
       style={styles.navbar}
       className="navbar navbar-expand-lg navbar-dark bg-dark"
     >
-      <Link style={styles.nom} to="/" className="navbar-brand" href="#">
-        Christophe Caillet
-      </Link>
+      <HeadShake>
+        <Link style={styles.nom} to="/" className="navbar-brand" href="#">
+          Christophe Caillet
+        </Link>{" "}
+      </HeadShake>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <NavLink
@@ -20,6 +23,7 @@ const NavBar = () => {
           >
             A propos de moi
           </NavLink>
+
           <NavLink
             style={styles.lien}
             to="/portfolio"
@@ -47,6 +51,9 @@ const styles = {
   lien: {
     fontSize: 18,
     margin: "0px 20px"
+  },
+  nom: {
+    fontFamily: "'Homemade Apple', cursive"
   }
 };
 
