@@ -20,14 +20,8 @@ class Homepage extends Component {
             </Bounce>
           </div>
           <p style={styles.p}>votre futur developpeur Web ?</p>
-          <Link to="/about">
-            <a
-              href="https://christophe13012.github.io/plateauReact/"
-              className="btn btn-lg btn-primary"
-              role="button"
-            >
-              Voici mon travail
-            </a>
+          <Link className="btn btn-lg btn-primary mt-1" to="/about">
+            Voici mon travail
           </Link>
         </div>
       </div>
