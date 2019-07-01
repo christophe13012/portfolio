@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Button } from "reactstrap";
 import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import { bounce } from "react-animations";
@@ -22,9 +21,13 @@ class Homepage extends Component {
           </div>
           <p style={styles.p}>votre futur developpeur Web ?</p>
           <Link to="/about">
-            <Button style={styles.button} color="primary" size="lg">
+            <a
+              href="https://christophe13012.github.io/plateauReact/"
+              className="btn btn-lg btn-primary"
+              role="button"
+            >
               Voici mon travail
-            </Button>
+            </a>
           </Link>
         </div>
       </div>
@@ -52,7 +55,6 @@ const styles = {
     color: "#f50057",
     fontWeight: "bold",
     display: "inline-block"
-  },
-  button: { marginTop: 20 }
+  }
 };
 export default Homepage;
