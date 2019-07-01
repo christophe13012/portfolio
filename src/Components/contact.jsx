@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Jumbotron } from "reactstrap";
 import NavBar from "./navBar";
-import Tabs from "./tabs";
 
 class Contact extends Component {
   state = {};

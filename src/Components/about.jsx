@@ -35,7 +35,7 @@ class About extends Component {
                   veux en faire mon métier.
                 </p>
                 <p>
-                  j'ai donc suivi de nombreux cours notamment sur Openclassrooms
+                  J'ai donc suivi de nombreux cours notamment sur Openclassrooms
                   et décidé de m'orienter en Front. Openclassrooms propose de
                   suivre des parcours diplomants et je m'inscris en juillet 2018
                   en parallele de mon emploi au parcours Développeur

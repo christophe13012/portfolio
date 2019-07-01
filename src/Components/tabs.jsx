@@ -34,9 +34,10 @@ export default class Tabs extends React.Component {
   render() {
     return (
       <div className="m-5">
-        <Nav pills>
+        <Nav pills className="nav justify-content-center">
           <NavItem>
             <NavLink
+              href="#"
               className={classnames({ active: this.state.activeTab === "1" })}
               onClick={() => {
                 this.toggle("1");
@@ -47,6 +48,7 @@ export default class Tabs extends React.Component {
           </NavItem>
           <NavItem>
             <NavLink
+              href="#"
               className={classnames({ active: this.state.activeTab === "2" })}
               onClick={() => {
                 this.toggle("2");
@@ -57,6 +59,7 @@ export default class Tabs extends React.Component {
           </NavItem>
           <NavItem>
             <NavLink
+              href="#"
               className={classnames({ active: this.state.activeTab === "3" })}
               onClick={() => {
                 this.toggle("3");
@@ -67,6 +70,7 @@ export default class Tabs extends React.Component {
           </NavItem>
           <NavItem>
             <NavLink
+              href="#"
               className={classnames({ active: this.state.activeTab === "4" })}
               onClick={() => {
                 this.toggle("4");
@@ -77,12 +81,24 @@ export default class Tabs extends React.Component {
           </NavItem>
           <NavItem>
             <NavLink
+              href="#"
               className={classnames({ active: this.state.activeTab === "5" })}
               onClick={() => {
                 this.toggle("5");
               }}
             >
-              WORDPRESS + BOOTSTRAP
+              WORDPRESS
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              href="#"
+              className={classnames({ active: this.state.activeTab === "6" })}
+              onClick={() => {
+                this.toggle("6");
+              }}
+            >
+              BOOTSTRAP
             </NavLink>
           </NavItem>
         </Nav>
@@ -115,8 +131,8 @@ export default class Tabs extends React.Component {
                 <Card body className="m-2">
                   <CardTitle>Vidly</CardTitle>
                   <CardText>
-                    Creer un site React sur le cinéma, avec ses films préférés
-                    selon les genres.
+                    Creer un site React sur le cinéma, avec la liste de ses
+                    films préférés selon les genres et les notes.
                   </CardText>
                   <Button className="btn-info">Le site</Button>
                   <Button className="mt-1">Repo GITHUB</Button>
@@ -212,6 +228,10 @@ export default class Tabs extends React.Component {
                   <Button className="mt-1">Repo GITHUB</Button>
                 </Card>
               </Col>
+            </Row>
+          </TabPane>
+          <TabPane tabId="6">
+            <Row className="mt-3">
               <Col sm="6">
                 <Card body className="m-2">
                   <CardTitle>Festival des Films de Plein Air</CardTitle>
