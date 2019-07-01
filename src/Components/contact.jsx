@@ -24,9 +24,9 @@ class Contact extends Component {
             </p>
             <p className="lead" />
           </Jumbotron>
-          <div style={styles.contacts} className="container">
-            <div className="row text-center">
-              <div className="col-sm">
+          <div className="container pt-0 pb-5">
+            <div className="row text-center pb-3">
+              <div className="col-md-6 mt-5">
                 <p>
                   <FaPhoneSquare size={70} />
                 </p>
@@ -34,7 +34,7 @@ class Contact extends Component {
                   0667280298
                 </p>
               </div>
-              <div className="col-sm">
+              <div className="col-md-6 mt-5">
                 <p>
                   <FaEnvelopeSquare size={70} />
                 </p>
@@ -42,7 +42,7 @@ class Contact extends Component {
                   christophecaillet@icloud.com
                 </p>
               </div>
-              <div className="col-sm">
+              <div className="col-md-6 mt-5">
                 <p>
                   <FaLinkedin size={70} />
                 </p>
@@ -55,7 +55,7 @@ class Contact extends Component {
                   </a>
                 </p>
               </div>
-              <div className="col-sm">
+              <div className="col-md-6 mt-5">
                 <p>
                   <FaFile size={70} />
                 </p>
@@ -80,10 +80,6 @@ const styles = {
   main: {
     backgroundColor: "white",
     height: "100%"
-  },
-  contacts: {
-    paddingTop: 35,
-    paddingBottom: 100
   }
 };
 

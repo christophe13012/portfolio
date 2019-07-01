@@ -21,7 +21,7 @@ class About extends Component {
         </Jumbotron>
         <div>
           <Slide left cascade>
-            <section className="container" style={styles.main}>
+            <section className="container">
               <div className="row">
                 <section className="col-lg mt-3" style={styles.histoire}>
                   <h3>
@@ -101,7 +101,7 @@ class About extends Component {
             </section>
           </Slide>
           <Slide right cascade>
-            <section className="bg-light pt-5 pb-5 pl-5">
+            <section className="bg-light pt-5 pb-5 pl-5 mt-5">
               <h3>
                 <Badge color="secondary">Voici ma formation :</Badge>
               </h3>
