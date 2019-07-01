@@ -19,87 +19,89 @@ class About extends Component {
           </p>
           <p className="lead" />
         </Jumbotron>
-        <div style={styles.about}>
+        <div>
           <Slide left cascade>
-            <section style={styles.main}>
-              <section style={styles.histoire}>
-                <h3>
-                  <Badge color="secondary">Histoire :</Badge>
-                </h3>
-                <p className="mt-4">
-                  Apres avoir fait des études de sciences économiques à la
-                  sortie d'un bac ES, je me suis orienté dans la logistique
-                  jusque occuper maintenant un poste de responsable d'équipe.
-                  Mais il y a 3 ans j'ai découvert avec passion le developpement
-                  web pour un besoin professionnel, et c'est la révélation, je
-                  veux en faire mon métier.
-                </p>
-                <p>
-                  J'ai donc suivi de nombreux cours notamment sur Openclassrooms
-                  et décidé de m'orienter en Front. Openclassrooms propose de
-                  suivre des parcours diplomants et je m'inscris en juillet 2018
-                  en parallele de mon emploi au parcours Développeur
-                  d'application - Frontend délivrant un Diplôme RCNP niveau
-                  Bac+3/4, que j'ai validé en mars 2019. j'ai décidé ensuite de
-                  me perfectionner durant quelques mois avant de checher
-                  activement un emploi dans ce domaine.
-                </p>
-                <p>
-                  J'ai décidé de me spécialiser sur React, j'ai donc suivi des
-                  cours et fait beaucoup de projets, vous pourrez voir les plus
-                  aboutis dans la section Porfolio, et j'ai également fait
-                  quelques applications en React Native, étant passioné des
-                  produits Apple, c'est un bel aboutissement pour moi.
-                </p>
-                <p>Au plaisir de pouvoir discuter avec vous.</p>
-              </section>
-              <section style={styles.comp}>
-                <h3>
-                  <Badge color="secondary">Compétences :</Badge>
-                </h3>
-                <div>
-                  <div className="text-center">HTML</div>
-                  <Progress animated color="success" value="75">
-                    75%
-                  </Progress>
-                  <div className="text-center mt-3">CSS</div>
-                  <Progress animated color="success" value="75">
-                    75%
-                  </Progress>
-                  <div className="text-center mt-3">JAVASCRIPT</div>
-                  <Progress animated color="primary" value="80">
-                    80%
-                  </Progress>
-                  <div className="text-center mt-3">REACT</div>
-                  <Progress animated color="info" value="75">
-                    75%
-                  </Progress>
-                  <div className="text-center mt-3">REACT NATIVE</div>
-                  <Progress animated color="info" value="65">
-                    65%
-                  </Progress>
-                  <div className="text-center mt-3">JQUERY</div>
-                  <Progress animated color="warning" value="65">
-                    65%
-                  </Progress>
-                  <div className="text-center mt-3">NODEJS</div>
-                  <Progress animated color="warning" value="50">
-                    50%
-                  </Progress>
-                  <div className="text-center mt-3">GIT</div>
-                  <Progress animated color="danger" value="50">
-                    50%
-                  </Progress>
-                  <div className="text-center mt-3">PHP</div>
-                  <Progress animated color="danger" value="30">
-                    30%
-                  </Progress>
-                </div>
-              </section>
+            <section className="container" style={styles.main}>
+              <div className="row">
+                <section className="col-lg mt-3" style={styles.histoire}>
+                  <h3>
+                    <Badge color="secondary">Histoire :</Badge>
+                  </h3>
+                  <p className="mt-4">
+                    Apres avoir fait des études de sciences économiques à la
+                    sortie d'un bac ES, je me suis orienté dans la logistique
+                    jusque occuper maintenant un poste de responsable d'équipe.
+                    Mais il y a 3 ans j'ai découvert avec passion le
+                    developpement web pour un besoin professionnel, et c'est la
+                    révélation, je veux en faire mon métier.
+                  </p>
+                  <p>
+                    J'ai donc suivi de nombreux cours notamment sur
+                    Openclassrooms et décidé de m'orienter en Front.
+                    Openclassrooms propose de suivre des parcours diplomants et
+                    je m'inscris en juillet 2018 en parallele de mon emploi au
+                    parcours Développeur d'application - Frontend délivrant un
+                    Diplôme RCNP niveau Bac+3/4, que j'ai validé en mars 2019.
+                    j'ai décidé ensuite de me perfectionner durant quelques mois
+                    avant de checher activement un emploi dans ce domaine.
+                  </p>
+                  <p>
+                    J'ai décidé de me spécialiser sur React, j'ai donc suivi des
+                    cours et fait beaucoup de projets, vous pourrez voir les
+                    plus aboutis dans la section Porfolio, et j'ai également
+                    fait quelques applications en React Native, étant passioné
+                    des produits Apple, c'est un bel aboutissement pour moi.
+                  </p>
+                  <p>Au plaisir de pouvoir discuter avec vous.</p>
+                </section>
+                <section className="col-lg mt-3" style={styles.comp}>
+                  <h3>
+                    <Badge color="secondary">Compétences :</Badge>
+                  </h3>
+                  <div>
+                    <div className="text-center">HTML</div>
+                    <Progress animated color="success" value="75">
+                      75%
+                    </Progress>
+                    <div className="text-center mt-3">CSS</div>
+                    <Progress animated color="success" value="75">
+                      75%
+                    </Progress>
+                    <div className="text-center mt-3">JAVASCRIPT</div>
+                    <Progress animated color="primary" value="80">
+                      80%
+                    </Progress>
+                    <div className="text-center mt-3">REACT</div>
+                    <Progress animated color="info" value="75">
+                      75%
+                    </Progress>
+                    <div className="text-center mt-3">REACT NATIVE</div>
+                    <Progress animated color="info" value="65">
+                      65%
+                    </Progress>
+                    <div className="text-center mt-3">JQUERY</div>
+                    <Progress animated color="warning" value="65">
+                      65%
+                    </Progress>
+                    <div className="text-center mt-3">NODEJS</div>
+                    <Progress animated color="warning" value="50">
+                      50%
+                    </Progress>
+                    <div className="text-center mt-3">GIT</div>
+                    <Progress animated color="danger" value="50">
+                      50%
+                    </Progress>
+                    <div className="text-center mt-3">PHP</div>
+                    <Progress animated color="danger" value="30">
+                      30%
+                    </Progress>
+                  </div>
+                </section>
+              </div>
             </section>
           </Slide>
           <Slide right cascade>
-            <section className="bg-light" style={styles.formation}>
+            <section className="bg-light pt-5 pb-5 pl-5">
               <h3>
                 <Badge color="secondary">Voici ma formation :</Badge>
               </h3>
@@ -119,7 +121,7 @@ class About extends Component {
             </section>
           </Slide>
           <Slide left cascade>
-            <section style={styles.experience}>
+            <section className="pt-5 pb-5 pl-5">
               <h3>
                 <Badge color="secondary">Ainsi que mon expérience :</Badge>
               </h3>
@@ -146,30 +148,6 @@ class About extends Component {
 const styles = {
   container: {
     backgroundColor: "white"
-  },
-  main: {
-    marginTop: 60,
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-around"
-  },
-  histoire: {
-    width: "45%"
-  },
-  comp: {
-    width: "45%"
-  },
-  formation: {
-    paddingLeft: 50,
-    paddingTop: 30,
-    paddingBottom: 30,
-    marginTop: 75
-  },
-  experience: {
-    paddingLeft: 50,
-    paddingTop: 30,
-    paddingBottom: 40,
-    marginTop: 10
   }
 };
 
