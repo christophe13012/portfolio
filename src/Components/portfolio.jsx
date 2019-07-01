@@ -7,9 +7,9 @@ class Portfolio extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div style={styles.main}>
         <NavBar />
-        <div style={styles.main}>
+        <div>
           <Jumbotron className="text-center">
             <h1 className="display-4">Mon récent travail</h1>
             <hr className="my-2" />
@@ -29,7 +29,8 @@ class Portfolio extends Component {
 
 const styles = {
   main: {
-    backgroundColor: "white"
+    backgroundColor: "white",
+    height: "100%"
   }
 };
 

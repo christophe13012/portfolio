@@ -6,7 +6,6 @@ import {
   NavItem,
   NavLink,
   Card,
-  Button,
   CardTitle,
   CardText,
   Row,
@@ -105,37 +104,98 @@ export default class Tabs extends React.Component {
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             <Row className="mt-3">
-              <Col sm="4">
+              <Col sm="6">
                 <Card body className="m-2">
                   <CardTitle>Jeux de plateau</CardTitle>
                   <CardText>
                     Créer un jeu en ligne en React dans lequel 2 joueurs
                     évoluent chacun leur tour pour s'affronter.
                   </CardText>
-                  <Button className="btn-info">Le site</Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://github.com/christophe13012/plateauReact"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
-              <Col sm="4">
+              <Col sm="6">
                 <Card body className="m-2">
                   <CardTitle>A vos avis</CardTitle>
                   <CardText>
                     Créer un site React simple et utile qui permet d'avoir des
                     avis sur des restaurants autour de soi.
                   </CardText>
-                  <Button className="btn-info">Le site</Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  <a
+                    href="https://christophe13012.github.io/avosavisReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://github.com/christophe13012/avosavisReact"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
-              <Col sm="4">
+            </Row>
+            <Row className="mt-3">
+              <Col sm="6">
                 <Card body className="m-2">
                   <CardTitle>Vidly</CardTitle>
                   <CardText>
                     Creer un site React sur le cinéma, avec la liste de ses
                     films préférés selon les genres et les notes.
                   </CardText>
-                  <Button className="btn-info">Le site</Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
+                </Card>
+              </Col>
+              <Col sm="6">
+                <Card body className="m-2">
+                  <CardTitle>Portfolio</CardTitle>
+                  <CardText>
+                    Creer un Portfolio en React avec notamment reactstrap et
+                    react-dom-router
+                  </CardText>
+                  <a
+                    href="https://christophe13012.github.io/portfolio/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://github.com/christophe13012/portfolio"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
             </Row>
@@ -146,10 +206,20 @@ export default class Tabs extends React.Component {
                 <Card body className="m-2">
                   <CardTitle>Movies and me</CardTitle>
                   <CardText>Application IOS/ANDROID sur le cinéma</CardText>
-                  <Button className="btn-info" disabled>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info disabled"
+                    role="button"
+                  >
                     L'application
-                  </Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  </a>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
               <Col sm="6">
@@ -158,8 +228,20 @@ export default class Tabs extends React.Component {
                   <CardText>
                     Application IOS/ANDROID de livescore football
                   </CardText>
-                  <Button className="btn-info">L'application</Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    L'application
+                  </a>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
             </Row>
@@ -173,8 +255,20 @@ export default class Tabs extends React.Component {
                     Générateur de citations, construites aléatoirement en
                     assemblant des morceaux de phrase.
                   </CardText>
-                  <Button className="btn-info">Le site</Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
               <Col sm="4">
@@ -184,8 +278,20 @@ export default class Tabs extends React.Component {
                     Créer un jeu en ligne en Javascript dans lequel 2 joueurs
                     évoluent chacun leur tour pour s'affronter.
                   </CardText>
-                  <Button className="btn-info">Le site</Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
               <Col sm="4">
@@ -195,8 +301,20 @@ export default class Tabs extends React.Component {
                     Créer un site Javascript simple et utile qui permet d'avoir
                     des avis sur des restaurants autour de soi.
                   </CardText>
-                  <Button className="btn-info">Le site</Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
             </Row>
@@ -207,8 +325,20 @@ export default class Tabs extends React.Component {
                 <Card body className="m-2">
                   <CardTitle>API vidly</CardTitle>
                   <CardText>Api pour alimenter le site Vidly</CardText>
-                  <Button className="btn-info">Le site</Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
             </Row>
@@ -224,8 +354,20 @@ export default class Tabs extends React.Component {
                     chalets de luxe à la vente ainsi que d'autres chalets de
                     luxe en location.
                   </CardText>
-                  <Button className="btn-info">Le site</Button>
-                  <Button className="mt-1">Repo GITHUB</Button>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
             </Row>
@@ -241,8 +383,20 @@ export default class Tabs extends React.Component {
                     réservations. <br /> Livrables : Document de spécification
                     technique du projet + prototype du site en Bootstrap
                   </CardText>
-                  <Button className="btn-info">Le site</Button>
-                  <Button className="mt-1">Doc techniques + devis</Button>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
                 </Card>
               </Col>
             </Row>
