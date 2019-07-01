@@ -1,50 +1,71 @@
-import React from "react";
+import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 import HeadShake from "react-reveal/HeadShake";
 
-const NavBar = () => {
-  return (
-    <nav
-      style={styles.navbar}
-      className="navbar navbar-expand-lg navbar-dark bg-dark"
-    >
-      <HeadShake>
-        <Link style={styles.nom} to="/" className="navbar-brand" href="#">
-          Christophe Caillet
-        </Link>{" "}
-      </HeadShake>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ml-auto">
-          <NavLink
-            style={styles.lien}
-            to="/about"
-            className="nav-link"
-            href="#"
-          >
-            A propos de moi
-          </NavLink>
+class NavBar extends React.Component {
+  constructor(props) {
+    super(props);
 
-          <NavLink
-            style={styles.lien}
-            to="/portfolio"
-            className="nav-link"
-            href="#"
-          >
-            Mon portfolio
-          </NavLink>
-          <NavLink
-            style={styles.lien}
-            to="/contact"
-            className="nav-link"
-            href="#"
-          >
-            Me contacter
-          </NavLink>
-        </ul>
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div>
+        <Navbar color="dark" dark expand="md">
+          <HeadShake>
+            <Link style={styles.nom} to="/" className="navbar-brand" href="#">
+              Christophe Caillet
+            </Link>{" "}
+          </HeadShake>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink
+                  style={styles.lien}
+                  to="/about"
+                  className="nav-link"
+                  href="#"
+                >
+                  A propos de moi
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  style={styles.lien}
+                  to="/portfolio"
+                  className="nav-link"
+                  href="#"
+                >
+                  Mon portfolio
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  style={styles.lien}
+                  to="/contact"
+                  className="nav-link"
+                  href="#"
+                >
+                  Me contacter
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
       </div>
-    </nav>
-  );
-};
+    );
+  }
+}
 
 const styles = {
   navbar: { marginBottom: 0 },
