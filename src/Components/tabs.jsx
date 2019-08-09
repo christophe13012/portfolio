@@ -167,7 +167,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://github.com/christophe13012/plateauReact"
                     className="btn btn-secondary mt-1"
                     role="button"
                   >
@@ -182,6 +182,50 @@ export default class Tabs extends React.Component {
                     Creer un Portfolio en React avec notamment reactstrap et
                     react-dom-router
                   </CardText>
+                  <a
+                    href="https://christophe13012.github.io/portfolio/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://github.com/christophe13012/portfolio"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
+                </Card>
+              </Col>
+            </Row>
+            <Row className="mt-3">
+              <Col sm="6">
+                <Card body className="m-2">
+                  <CardTitle>Emoji search</CardTitle>
+                  <CardText>
+                    Site pour rechercher des emojis selon un mot clé
+                  </CardText>
+                  <a
+                    href="https://christophe13012.github.io/emojiSearch/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    href="https://github.com/christophe13012/emojiSearch"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
+                </Card>
+              </Col>
+              <Col sm="6">
+                <Card body className="m-2">
+                  <CardTitle>En cours</CardTitle>
+                  <CardText>...</CardText>
                   <a
                     href="https://christophe13012.github.io/portfolio/"
                     className="btn btn-info"
@@ -384,14 +428,14 @@ export default class Tabs extends React.Component {
                     technique du projet + prototype du site en Bootstrap
                   </CardText>
                   <a
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://christophe13012.github.io/pleinair/"
                     className="btn btn-info"
                     role="button"
                   >
                     Le site
                   </a>
                   <a
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://github.com/christophe13012/pleinair/"
                     className="btn btn-secondary mt-1"
                     role="button"
                   >
