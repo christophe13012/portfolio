@@ -160,14 +160,14 @@ export default class Tabs extends React.Component {
                     films préférés selon les genres et les notes.
                   </CardText>
                   <a
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://polar-garden-69348.herokuapp.com/"
                     className="btn btn-info"
                     role="button"
                   >
                     Le site
                   </a>
                   <a
-                    href="https://github.com/christophe13012/plateauReact"
+                    href="https://github.com/christophe13012/vidly"
                     className="btn btn-secondary mt-1"
                     role="button"
                   >
@@ -371,13 +371,13 @@ export default class Tabs extends React.Component {
                   <CardText>Api pour alimenter le site Vidly</CardText>
                   <a
                     href="https://christophe13012.github.io/plateauReact/"
-                    className="btn btn-info"
+                    className="btn btn-info disabled"
                     role="button"
                   >
                     Le site
                   </a>
                   <a
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://github.com/christophe13012/vidly-back"
                     className="btn btn-secondary mt-1"
                     role="button"
                   >
