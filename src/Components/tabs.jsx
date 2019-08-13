@@ -112,6 +112,7 @@ export default class Tabs extends React.Component {
                     évoluent chacun leur tour pour s'affronter.
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-info"
                     role="button"
@@ -119,6 +120,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/christophe13012/plateauReact"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -135,6 +137,7 @@ export default class Tabs extends React.Component {
                     avis sur des restaurants autour de soi.
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/avosavisReact/"
                     className="btn btn-info"
                     role="button"
@@ -142,6 +145,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/christophe13012/avosavisReact"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -160,6 +164,7 @@ export default class Tabs extends React.Component {
                     films préférés selon les genres et les notes.
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://polar-garden-69348.herokuapp.com/"
                     className="btn btn-info"
                     role="button"
@@ -167,6 +172,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/christophe13012/vidly"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -183,6 +189,7 @@ export default class Tabs extends React.Component {
                     react-dom-router
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/portfolio/"
                     className="btn btn-info"
                     role="button"
@@ -190,6 +197,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/christophe13012/portfolio"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -207,6 +215,7 @@ export default class Tabs extends React.Component {
                     Site pour rechercher des emojis selon un mot clé
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/emojiSearch/"
                     className="btn btn-info"
                     role="button"
@@ -214,6 +223,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/christophe13012/emojiSearch"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -224,17 +234,19 @@ export default class Tabs extends React.Component {
               </Col>
               <Col sm="6">
                 <Card body className="m-2">
-                  <CardTitle>En cours</CardTitle>
-                  <CardText>...</CardText>
+                  <CardTitle>Shopping Cart</CardTitle>
+                  <CardText>Site de vente de sneakers</CardText>
                   <a
-                    href="https://christophe13012.github.io/portfolio/"
+                    target="_blank"
+                    href="https://christophe13012.github.io/shoppingcart/"
                     className="btn btn-info"
                     role="button"
                   >
                     Le site
                   </a>
                   <a
-                    href="https://github.com/christophe13012/portfolio"
+                    target="_blank"
+                    href="https://github.com/christophe13012/shoppingcart"
                     className="btn btn-secondary mt-1"
                     role="button"
                   >
@@ -251,6 +263,7 @@ export default class Tabs extends React.Component {
                   <CardTitle>Movies and me</CardTitle>
                   <CardText>Application IOS/ANDROID sur le cinéma</CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-info disabled"
                     role="button"
@@ -258,6 +271,7 @@ export default class Tabs extends React.Component {
                     L'application
                   </a>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -273,6 +287,7 @@ export default class Tabs extends React.Component {
                     Application IOS/ANDROID de livescore football
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-info"
                     role="button"
@@ -280,6 +295,7 @@ export default class Tabs extends React.Component {
                     L'application
                   </a>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -300,6 +316,7 @@ export default class Tabs extends React.Component {
                     assemblant des morceaux de phrase.
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-info"
                     role="button"
@@ -307,6 +324,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -323,6 +341,7 @@ export default class Tabs extends React.Component {
                     évoluent chacun leur tour pour s'affronter.
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-info"
                     role="button"
@@ -330,6 +349,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -346,6 +366,7 @@ export default class Tabs extends React.Component {
                     des avis sur des restaurants autour de soi.
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-info"
                     role="button"
@@ -353,6 +374,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -370,6 +392,7 @@ export default class Tabs extends React.Component {
                   <CardTitle>API vidly</CardTitle>
                   <CardText>Api pour alimenter le site Vidly</CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-info disabled"
                     role="button"
@@ -377,6 +400,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/christophe13012/vidly-back"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -399,6 +423,7 @@ export default class Tabs extends React.Component {
                     luxe en location.
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-info"
                     role="button"
@@ -406,6 +431,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/plateauReact/"
                     className="btn btn-secondary mt-1"
                     role="button"
@@ -428,6 +454,7 @@ export default class Tabs extends React.Component {
                     technique du projet + prototype du site en Bootstrap
                   </CardText>
                   <a
+                    target="_blank"
                     href="https://christophe13012.github.io/pleinair/"
                     className="btn btn-info"
                     role="button"
@@ -435,6 +462,7 @@ export default class Tabs extends React.Component {
                     Le site
                   </a>
                   <a
+                    target="_blank"
                     href="https://github.com/christophe13012/pleinair/"
                     className="btn btn-secondary mt-1"
                     role="button"
