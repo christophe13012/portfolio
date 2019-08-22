@@ -16,13 +16,11 @@ import classnames from "classnames";
 export default class Tabs extends React.Component {
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.state = {
       activeTab: "1"
     };
   }
-
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
@@ -286,7 +284,7 @@ export default class Tabs extends React.Component {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://github.com/christophe13012/moviesandme"
                     className="btn btn-secondary mt-1"
                     role="button"
                   >
@@ -304,7 +302,7 @@ export default class Tabs extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://christophe13012.github.io/plateauReact/"
-                    className="btn btn-info"
+                    className="btn btn-info  disabled"
                     role="button"
                   >
                     L'application
@@ -313,7 +311,7 @@ export default class Tabs extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://christophe13012.github.io/plateauReact/"
-                    className="btn btn-secondary mt-1"
+                    className="btn btn-secondary mt-1  disabled"
                     role="button"
                   >
                     Repo GITHUB
@@ -326,33 +324,6 @@ export default class Tabs extends React.Component {
             <Row className="mt-3">
               <Col sm="4">
                 <Card body className="m-2">
-                  <CardTitle>Générateur de citations</CardTitle>
-                  <CardText>
-                    Générateur de citations, construites aléatoirement en
-                    assemblant des morceaux de phrase.
-                  </CardText>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
-                    className="btn btn-info"
-                    role="button"
-                  >
-                    Le site
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
-                    className="btn btn-secondary mt-1"
-                    role="button"
-                  >
-                    Repo GITHUB
-                  </a>
-                </Card>
-              </Col>
-              <Col sm="4">
-                <Card body className="m-2">
                   <CardTitle>Jeux de plateau</CardTitle>
                   <CardText>
                     Créer un jeu en ligne en Javascript dans lequel 2 joueurs
@@ -361,7 +332,7 @@ export default class Tabs extends React.Component {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://christophe13012.github.io/plateau/"
                     className="btn btn-info"
                     role="button"
                   >
@@ -370,7 +341,7 @@ export default class Tabs extends React.Component {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://github.com/christophe13012/plateau"
                     className="btn btn-secondary mt-1"
                     role="button"
                   >
@@ -388,7 +359,7 @@ export default class Tabs extends React.Component {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://christophe13012.github.io/avosavisjs/"
                     className="btn btn-info"
                     role="button"
                   >
@@ -397,8 +368,35 @@ export default class Tabs extends React.Component {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://github.com/christophe13012/avosavisjs"
                     className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
+                </Card>
+              </Col>
+              <Col sm="4">
+                <Card body className="m-2">
+                  <CardTitle>Générateur de citations</CardTitle>
+                  <CardText>
+                    Générateur de citations, construites aléatoirement en
+                    assemblant des morceaux de phrase.
+                  </CardText>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info  disabled"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-secondary mt-1  disabled"
                     role="button"
                   >
                     Repo GITHUB
@@ -450,7 +448,7 @@ export default class Tabs extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://christophe13012.github.io/plateauReact/"
-                    className="btn btn-info"
+                    className="btn btn-info disabled"
                     role="button"
                   >
                     Le site
@@ -459,7 +457,7 @@ export default class Tabs extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://christophe13012.github.io/plateauReact/"
-                    className="btn btn-secondary mt-1"
+                    className="btn btn-secondary mt-1 disabled"
                     role="button"
                   >
                     Repo GITHUB
