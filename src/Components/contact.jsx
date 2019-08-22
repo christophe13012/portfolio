@@ -60,10 +60,7 @@ class Contact extends Component {
                   <FaFile size={70} />
                 </p>
                 <p className="alert alert-dark" role="alert">
-                  <a
-                    className="alert-link"
-                    href="https://fr.linkedin.com/in/christophe-caillet-01969863"
-                  >
+                  <a className="alert-link" href="cvdev.pdf">
                     Voir C.V
                   </a>
                 </p>
