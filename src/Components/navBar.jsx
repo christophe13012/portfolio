@@ -22,7 +22,12 @@ class NavBar extends React.Component {
       <div>
         <Navbar color="dark" dark expand="md">
           <HeadShake>
-            <Link style={styles.nom} to="/" className="navbar-brand" href="#">
+            <Link
+              style={styles.nom}
+              to="/portfolio"
+              className="navbar-brand"
+              href="#"
+            >
               Christophe Caillet
             </Link>{" "}
           </HeadShake>
@@ -32,7 +37,7 @@ class NavBar extends React.Component {
               <NavItem>
                 <NavLink
                   style={styles.lien}
-                  to="/about"
+                  to="/portfolio/about"
                   className="nav-link"
                   href="#"
                 >
@@ -42,7 +47,7 @@ class NavBar extends React.Component {
               <NavItem>
                 <NavLink
                   style={styles.lien}
-                  to="/portfolio"
+                  to="/portfolio/portfolio"
                   className="nav-link"
                   href="#"
                 >
@@ -52,7 +57,7 @@ class NavBar extends React.Component {
               <NavItem>
                 <NavLink
                   style={styles.lien}
-                  to="/contact"
+                  to="/portfolio/contact"
                   className="nav-link"
                   href="#"
                 >

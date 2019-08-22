@@ -20,7 +20,7 @@ class Homepage extends Component {
             </Bounce>
           </div>
           <p style={styles.p}>votre futur developpeur Web ?</p>
-          <Link className="btn btn-lg btn-primary mt-1" to="/about">
+          <Link className="btn btn-lg btn-primary mt-1" to="portfolio/about">
             Voici mon travail
           </Link>
         </div>

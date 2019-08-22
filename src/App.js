@@ -10,12 +10,12 @@ function App() {
   return (
     <React.Fragment>
       <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/about/" component={About} />
-        <Route exact path="/portfolio/" component={Portfolio} />
-        <Route exact path="/contact/" component={Contact} />
-        <Route path="/notFound/" component={NotFound} />
-        <Redirect to="/notFound" />
+        <Route exact path="/portfolio/" component={Homepage} />
+        <Route exact path="/portfolio/about/" component={About} />
+        <Route exact path="/portfolio/portfolio/" component={Portfolio} />
+        <Route exact path="/portfolio/contact/" component={Contact} />
+        <Route path="/portfolio/notFound/" component={NotFound} />
+        <Redirect to="/portfolio/notFound" />
       </Switch>
     </React.Fragment>
   );
