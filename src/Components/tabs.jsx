@@ -104,15 +104,15 @@ export default class Tabs extends React.Component {
             <Row className="mt-3">
               <Col sm="6">
                 <Card body className="m-2">
-                  <CardTitle>Jeux de plateau</CardTitle>
+                  <CardTitle>Burger Builder Redux</CardTitle>
                   <CardText>
-                    Créer un jeu en ligne en React dans lequel 2 joueurs
-                    évoluent chacun leur tour pour s'affronter.
+                    Créer un site pour construire et commander des burgers. Le
+                    state est géré avec Redux.
                   </CardText>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
+                    href="https://christophe13012.github.io/burger_builder_redux/"
                     className="btn btn-info"
                     role="button"
                   >
@@ -121,7 +121,7 @@ export default class Tabs extends React.Component {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://github.com/christophe13012/plateauReact"
+                    href="https://github.com/christophe13012/burger_builder_redux"
                     className="btn btn-secondary mt-1"
                     role="button"
                   >
@@ -265,9 +265,64 @@ export default class Tabs extends React.Component {
                 </Card>
               </Col>
             </Row>
+            <Row className="mt-3">
+              <Col sm="6">
+                <Card body className="m-2">
+                  <CardTitle>Jeux de plateau</CardTitle>
+                  <CardText>
+                    Créer un jeu en ligne en React dans lequel 2 joueurs
+                    évoluent chacun leur tour pour s'affronter.
+                  </CardText>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://christophe13012.github.io/plateauReact/"
+                    className="btn btn-info"
+                    role="button"
+                  >
+                    Le site
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/christophe13012/plateauReact"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
+                </Card>
+              </Col>
+            </Row>
           </TabPane>
           <TabPane tabId="2">
             <Row className="mt-3">
+              <Col sm="6">
+                <Card body className="m-2">
+                  <CardTitle>Goalala</CardTitle>
+                  <CardText>
+                    Application IOS/ANDROID de livescore football
+                  </CardText>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://christophe13012.github.io/goalala/"
+                    className="btn btn-info  disabled"
+                    role="button"
+                  >
+                    L'application
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://christophe13012.github.io/goalala/"
+                    className="btn btn-secondary mt-1"
+                    role="button"
+                  >
+                    Repo GITHUB
+                  </a>
+                </Card>
+              </Col>
               <Col sm="6">
                 <Card body className="m-2">
                   <CardTitle>Movies and me</CardTitle>
@@ -286,32 +341,6 @@ export default class Tabs extends React.Component {
                     rel="noopener noreferrer"
                     href="https://github.com/christophe13012/moviesandme"
                     className="btn btn-secondary mt-1"
-                    role="button"
-                  >
-                    Repo GITHUB
-                  </a>
-                </Card>
-              </Col>
-              <Col sm="6">
-                <Card body className="m-2">
-                  <CardTitle>Goalala</CardTitle>
-                  <CardText>
-                    Application IOS/ANDROID de livescore football
-                  </CardText>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
-                    className="btn btn-info  disabled"
-                    role="button"
-                  >
-                    L'application
-                  </a>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://christophe13012.github.io/plateauReact/"
-                    className="btn btn-secondary mt-1  disabled"
                     role="button"
                   >
                     Repo GITHUB
